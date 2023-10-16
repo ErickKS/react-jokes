@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body * {
+  font-family: "Manrope", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  background: linear-gradient(112deg, #eaf0ff 0%, #b3c0de 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blur {
+  width: 470px;
+  height: 412px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(19, 22, 56, 0.2) 0%, rgba(48, 90, 239, 0.2) 100%);
+  filter: blur(100px);
+}
