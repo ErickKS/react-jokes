@@ -33,16 +33,12 @@ export function JokeCard() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center gap-6 max-w-md w-[calc(100%-32px)] p-6 bg-[#131316] border border-[#1F1F22] rounded-xl">
-      <div className="flex flex-col gap-2 justify-center items-center">
-        <div className="h-[58px] w-[58px]">
-          <img src="./chuck.gif" alt="Chuck Norris gif" />
-        </div>
-
-        <h1 className="text-2xl text-[#C2CDE7] text-center font-medium">Joke of the moment</h1>
+    <div className="flex flex-col justify-center items-center max-w-md w-[calc(100%-32px)] p-6 bg-[#131316] border border-[#1F1F22] rounded-xl">
+      <div className="h-[58px] w-[58px]">
+        <img src="./chuck.gif" alt="Chuck Norris gif" />
       </div>
 
-      <div className="flex justify-center items-center h-32 px-4 min-w-full">
+      <div className="flex justify-center items-center min-w-full h-32 px-4 mb-6">
         {joke && <p className="text-[#8995B1] font-medium text-center transition-all animate-opacity">{joke}</p>}
       </div>
 
